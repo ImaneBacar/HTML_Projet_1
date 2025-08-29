@@ -4,23 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <!--Le menu -->
     <header>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#work">work</a>
-        <a href="#resume">resume</a>
-        <a href="#about">about</a>
-        <a href="#contact">contact</a>
+      <nav id="navbar">
+        <div id="logo">
+          <img id="logoimag" src="./src/logo.png" alt="" srcset="" />
+        </div>
+        <ul id="navbar-ul">
+          <li><a class="navbar-elements" href="#home">Home</a></li>
+          <li><a class="navbar-elements" href="#work">work</a></li>
+          <li><a class="navbar-elements" href="#resume">resume</a></li>
+          <li><a class="navbar-elements" href="#about">about</a></li>
+          <li><a class="navbar-elements" href="#contact">contact</a></li>
+        </ul>
       </nav>
     </header>
     <!--Le corps -->
     <main>
       <!--section HOME-->
       <section id="home">
-        <div class="">
+        <div id="homediv">
           <h1>Mon portfolio</h1>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -28,9 +34,11 @@
             at assumenda molestiae provident, ab, ex incidunt maiores id ipsum
             dolorum? Perferendis, eaque eius!
           </p>
-          <figure>
-            <img src="src/image.png" alt="" width="500px" />
-            <figcaption>Un beau paysage</figcaption>
+          <figure class="figure">
+            <div>
+              <img src="src/image.png" alt="" width="500px" />
+              <figcaption>Un beau paysage</figcaption>
+            </div>
           </figure>
         </div>
       </section>
@@ -105,15 +113,13 @@
             quas! Asperiores quas, blanditiis id laudantium rerum, ut voluptate
             ipsam omnis itaque ipsum voluptatum distinctio repudiandae sequi, ex
             pariatur quasi corrupti saepe ad minus accusamus.
-
-            <figure>
-              <audio src="src/Nouvel enregistrement.m4a" controls></audio>
-              <figcaption>
-                extrait audio : Le SITE PIRATE que PERSONNE n'a jamais pu
-                arrêter.
-              </figcaption>
-            </figure>
           </p>
+          <figure>
+            <audio src="src/Nouvel enregistrement.m4a" controls></audio>
+            <figcaption>
+              extrait audio : Le SITE PIRATE que PERSONNE n'a jamais pu arrêter.
+            </figcaption>
+          </figure>
         </div>
       </section>
       <!--section ABOUT-->
@@ -154,15 +160,23 @@
 
       <section id="contact">
         <h2>Nous contacter</h2>
-        <form action="">
-          <label for="nom">Nom</label>
-          <input type="text" name="nom" id="nom" required />
-          <label for="prenom">Prenom</label>
-          <input type="text" name="prenom" id="prenom" required />
-          <label for="mail">Email</label>
-          <input type="email" name="mail" id="mail" required />
-          <label for="message">Message</label>
-          <textarea name="message" id="message" required></textarea>
+        <form action="" id="form">
+          <div>
+            <label for="nom">Nom<span>*</span></label>
+            <input type="text" name="nom" id="nom" required />
+          </div>
+          <div>
+            <label for="prenom">Prenom<span>*</span></label>
+            <input type="text" name="prenom" id="prenom" required />
+          </div>
+          <div>
+            <label for="mail">Email<span>*</span></label>
+            <input type="email" name="mail" id="mail" required />
+          </div>
+          <div>
+            <label for="message">Message<span>*</span></label>
+            <textarea name="message" id="message" required></textarea>
+          </div>
           <button type="submit">Envoyer</button>
         </form>
       </section>

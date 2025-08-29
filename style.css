@@ -1,0 +1,163 @@
+/* importation de la police roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    /* la marge intérieur et extérieur   */
+    padding: 15px;
+    margin: 0;
+    /*  justifie le texte pour qu'il soit propre */
+    text-align: justify;
+    /* la police utilise est roboto en cas d'erreur sans-serif  */
+    font-family: "Roboto", sans-serif;
+
+}
+
+/*  nav bar */
+#navbar {
+    /* l'affichage de la navbar */
+    display: flex;
+
+    /* l'arriere plan du navbar*/
+    background-color: black;
+
+}
+
+/* ul navbar*/
+#navbar-ul {
+    /* l'affichage de la navbar */
+
+    display: flex;
+    /* la marge extérieur  */
+    margin: 30px;
+}
+
+/* puce liste navbar
+ */
+.navbar-elements {
+    /* couleur nav bar */
+    color: rgb(247, 247, 247);
+    /* enleve les traits  des listes */
+    text-decoration: none;
+    margin: 10px;
+}
+
+/* en survolant un liens dans la nav ça change de couleur  */
+.navbar-elements:hover {
+    /* couleur du texte */
+    color: rgb(147, 147, 222);
+    /* la transition de la couleur  */
+    transition: color 0.3s;
+
+}
+
+/* les figures  */
+figure {
+    /* centré les figures */
+    text-align: center;
+}
+
+/* liste a puce */
+#navbar-ul li {
+    /* enlver les puces des listes */
+    list-style: none;
+}
+
+/* id logo */
+#logoimag {
+    /* la largeur de l'image */
+    width: 75px;
+    /* la longueur de l'image  */
+    height: auto;
+}
+
+/*  main
+ */
+
+/*  gestion des h1 h1 en temps normal */
+h1,
+h2 {
+    /* centre les h1 et h2 */
+    text-align: center;
+    /* la couleur d'arriere plan */
+    background-color: #ffebcd;
+    /* la marge exterieur a 0 */
+    margin: 0;
+}
+
+/*  gestion des h1 h1 en cas de survole*/
+
+h1:hover,
+h2:hover {
+    color: rgb(249, 120, 120);
+    /* la transition de la couleur  */
+    transition: color 0.3s;
+
+}
+
+/* gestion de paragraphe  */
+p {
+    width: auto;
+}
+
+span {
+    color: red;
+}
+
+
+/* formulaire contact */
+#form {
+    /* marge a 10 et auto pour centre */
+    margin: 10px auto;
+
+    /* le max en largeur */
+    max-width: 400px;
+    /* la marge exterieur */
+    padding: 0 20px;
+    /* la couleur */
+    background-color: #ffebcd;
+    /* l'arrondis du formulaire */
+    border-radius: 6px;
+}
+
+/* pn semectione l'id form les input et le textarea */
+#form input,
+#form textarea {
+    /* la largeur */
+    width: 98%;
+    /* la marge interieur */
+    padding: 10px;
+    /* la marge exterieur en bas  */
+    margin-bottom: 10px;
+    /* une boder  */
+    border: 1px solid #ccc;
+}
+
+/*  bouton  formulaire  */
+#form button {
+    /* la marge exterieur  */
+    padding: 10px 20;
+    /* la couleur */
+    background-color: blue;
+    /* la couleur du texte  */
+    color: white;
+    /* enleve les bordure */
+    border: none;
+    /* arrondis */
+    border-radius: 4px;
+
+    /* pointe sur l'input sur voler  */
+    cursor: pointer;
+
+}
+
+/*  bouton  formulaire qui change de couleur une fois survoler  */
+#form button:hover {
+    background-color: darkblue;
+}
+
+
+/* le footer */
+
+footer {
+    text-align: center;
+}
